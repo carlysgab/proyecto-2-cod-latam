@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+/*Estilos Generales*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: black;
+  background-color: rgba(251, 251, 251, 0.918);
+}
+
+/*Estilos del header*/
+header {
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 40px;
+  color: rgba(120, 14, 146, 0.918);
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header li {
+  margin-right: 20px;
+  display: flex;
+}
+header a {
+  color: rgba(120, 14, 146, 0.918);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: black;
+}
+
+/*Estilos del main*/
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 40px;
+}
+
+section {
+  margin-bottom: 20px;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+  height: 400px;
+  border-radius: 200%;
+  border: 10px solid rgba(120, 14, 146, 0.918);
+}
+
+section h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#inicio article {
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+}
+#resumen {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#contacto article {
+  background-color: rgba(175, 89, 158, 0.3);
+  margin: 50px 30px;
+  padding: 15px;
+}
+
+#contacto p {
+  text-align: center;
+  margin: 20px;
+}
+
+section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #af599e;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.groups i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+i:hover {
+  transition: 1.3s;
+  transform: scale(1.1);
+}
+
+/*Estilos del footer*/
+footer {
+  height: 90px;
+  background-color: #af599e;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /*estilo cabezera*/
+  header {
+    padding: 10px;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header li {
+    margin-right: 10px;
+  }
+  /*Estilos principales de la página*/
+  main {
+    padding: 55px;
+  }
+  section h1 {
+    font-size: 28px;
+  }
+  button {
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #af599e;
+    color: white;
+  }
+  section h2 {
+    font-size: 26px;
+  }
+}
