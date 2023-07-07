@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 /*Estilos Generales*/
 * {
@@ -8,16 +8,20 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   color: black;
-  background-color: rgba(251, 251, 251, 0.918);
+  background-color: rgba(219, 203, 219, 0.918);
 }
 
+.dark-mode {
+  background-color: rgb(46, 44, 44);
+  color: antiquewhite;
+}
 /*Estilos del header*/
 header {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   position: fixed;
   left: 0;
@@ -30,49 +34,71 @@ header {
 }
 
 header h1 {
-  font-size: 40px;
-  color: rgba(120, 14, 146, 0.918);
+  font-size: 30px;
+  color: rgba(214, 23, 198, 0.918);
+  background-color: rgb(17, 7, 14);
 }
 
-header ul {
-  list-style: none;
+.barra {
   display: flex;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
 }
-header li {
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 10%;
+}
+
+.menu-nav {
+  display: none;
+}
+
+.menu-nav li {
   margin-right: 20px;
   display: flex;
 }
-header a {
-  color: rgba(120, 14, 146, 0.918);
+
+.menu-nav a {
+  color: rgba(19, 150, 226, 0.918);
   font-size: 20px;
   text-decoration: none;
   font-weight: bold;
 }
 
+.menu-nav.active {
+  display: flex;
+}
+
 header a:hover {
-  color: black;
+  color: rgba(3, 68, 80, 0.918);
 }
 
 /*Estilos del main*/
 main {
-  max-width: 1200px;
-  margin: auto;
+  background-color: #942b7f;
+  max-width: 759px;
   padding: 80px 40px;
+  margin-top: 95px;
+  margin: auto;
 }
 
 section {
   margin-bottom: 20px;
-  min-height: 100vh;
+  min-height: 75vh;
 }
-
-img {
+.imagen-1 {
   max-width: 100%;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   border-radius: 200%;
-  border: 10px solid rgba(120, 14, 146, 0.918);
+  margin: 20px;
+  border: 10px solid rgba(142, 19, 158, 0.918);
+}
+.imagen-2.active {
+  src: url("img/flor.jpeg");
 }
 
 section h1 {
@@ -81,24 +107,26 @@ section h1 {
 }
 
 #inicio article {
+  background-color: rgba(172, 225, 235, 0.918);
   box-sizing: border-box;
-  padding: 15px;
-  margin: 20px;
-  text-align: center;
+  padding: 20px;
+  margin: 50px 30px;
+  text-align: justify;
 }
+
 #resumen {
   text-align: center;
   margin: 0 auto;
 }
 
 #contacto article {
-  background-color: rgba(175, 89, 158, 0.3);
+  background-color: rgba(172, 225, 235, 0.918);
   margin: 50px 30px;
   padding: 15px;
 }
 
 #contacto p {
-  text-align: center;
+  text-align: r;
   margin: 20px;
 }
 
@@ -108,10 +136,10 @@ section h2 {
   text-align: center;
 }
 
-button {
-  background-color: #af599e;
+#resumen button {
+  background-color: #5e084c;
   color: white;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: bold;
   border: none;
@@ -122,8 +150,8 @@ button {
   margin: 10px;
 }
 
-button:hover {
-  background-color: aqua;
+#resumen button:hover {
+  background-color: rgb(43, 156, 201);
   color: black;
 }
 
@@ -144,50 +172,164 @@ i:hover {
   transform: scale(1.1);
 }
 
+#modo-oscuro {
+  background-color: rgba(56, 31, 52, 0.918);
+  color: rgba(19, 150, 226, 0.918);
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+}
+
 /*Estilos del footer*/
 footer {
   height: 90px;
-  background-color: #af599e;
-  color: white;
+  background-color: rgba(172, 225, 235, 0.918);
+  color: rgbrgb(59, 56, 56);
   text-align: center;
   margin: 20px;
   padding: 20px;
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 760px) {
+  /*tablet*/
   /*estilo cabezera*/
   header {
-    padding: 10px;
+    padding: 15px;
   }
-  header ul {
+  body {
+    background-color: rgba(175, 155, 173, 0.918);
+  }
+  .barra {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
-  header li {
+
+  .menu-icon {
+    display: none;
+  }
+  .menu-nav {
+    display: flex;
+  }
+  .menu-nav a {
+    color: rgba(19, 150, 226, 0.918);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .menu-nav li {
     margin-right: 10px;
   }
+  header h1 {
+    font-size: 40px;
+  }
+
   /*Estilos principales de la página*/
   main {
     padding: 55px;
+    margin-top: 95px;
+  }
+
+  .imagen-1 {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 0%;
+    border: 10px solid rgba(142, 19, 158, 0.918);
   }
   section h1 {
-    font-size: 28px;
+    font-size: 40px;
   }
-  button {
-    background-color: aqua;
+  #resumen button {
+    background-color: rgba(19, 150, 226, 0.918);
     color: black;
     border: none;
     padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 16px;
+    border-radius: 15px;
+    font-size: 20px;
   }
 
-  button:hover {
+  #resumen button:hover {
     background-color: #af599e;
     color: white;
   }
   section h2 {
-    font-size: 26px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /*desktop*/
+  /*estilo cabezera*/
+  header {
+    padding: 20px;
+  }
+  body {
+    background-color: rgba(209, 162, 204, 0.918);
+  }
+  .barra {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+  .menu-nav {
+    display: flex;
+  }
+  .menu-nav a {
+    color: rgba(19, 150, 226, 0.918);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header li {
+    margin-right: 10px;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  /*Estilos principales de la página*/
+  main {
+    padding: 55px;
+    max-width: 1024px;
+    width: 100%;
+    margin-top: 95px;
+  }
+  .imagen-1 {
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    border-radius: 0%;
+    border: 10px solid rgba(142, 19, 158, 0.918);
+  }
+
+  section h1 {
+    font-size: 48px;
+  }
+  #resumen button {
+    background-color: rgba(19, 150, 226, 0.918);
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+
+  #resumen button:hover {
+    background-color: #af599e;
+    color: white;
+  }
+  section h2 {
+    font-size: 38px;
   }
 }

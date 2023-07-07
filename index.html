@@ -10,12 +10,17 @@
       src="https://kit.fontawesome.com/bc6d0bfc21.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="img/luna-1.jpg">
+  
   </head>
   <body>
     <header>
       <h1>Carla Rondon</h1>
-      <nav>
-        <ul id="menu-nav">
+      <nav class="barra">
+        <div class="menu-icon" id="menu-icon">
+          <i class="fa-solid fa-bars" style="color: #000000"></i>
+        </div>
+        <ul id="menu-nav" class="menu-nav">
           <li><a href="#inicio"> Inicio </a></li>
           <li><a href="#contacto"> Contacto </a></li>
         </ul>
@@ -24,26 +29,35 @@
     <main>
       <section id="inicio">
         <article>
-          <img src="./img/carla.jpg" alt="carla" />
+          <img src="./img/carla.jpg" class="imagen-1" id="imagen-1" alt="carla" />
           <h1>Hola! Soy Carla</h1>
           <p>
-            Hola! soy Carla Rondon, me entusiasma comenzar una carrera en el
+            Hola, soy Carla Rondon, me entusiasma comenzar una carrera en el
             área de tecnología, me propuse está meta y voy a dar todo de mi para
-            lograrlo.
+            lograrlo. Soy de Valencia, Venezuela y vivo en Colombia desde el
+            2019.
+          </p>
+          <p>
+            Quiero continuar preparandome para ser una profesional en este
+            hermoso país y colaborar con su desarrollo, actualmente vivo en la
+            ciudad de Medellín, ciudad que se hace querer facilmente.
           </p>
         </article>
         <div id="resumen">
-          <a href="img/sintesis.pdf"><button>Descargar mi CV</button></a>
+          <a href="img/Carla Rondon.pdf"><button>Descargar mi CV</button></a>
         </div>
       </section>
       <section id="contacto">
         <article>
           <h2>Hablemos!</h2>
           <p>
-            Actualmente me preparo en este curso de Desarrollo Web ofrecido
-            Código Pa´ Lante y adicionalmente curso tecnologo de análisis y
+            Actualmente me preparo en este curso de Desarrollo Web ofrecido por
+            Código Pa´ Lante y adicionalmente curso el tecnólogo de análisis y
             desarrollo de software ofrecido por el Servicio Nacional de
-            aprendizaje SENA
+            aprendizaje SENA. Lo realizo de manera virtual, estos son los
+            primeros pasos que estoy dando para lograr ser una profesional, mis
+            deseos son terminar el tecnólogo y continuar con los estudios de
+            pregrado
           </p>
         </article>
         <div class="icons">
@@ -63,10 +77,17 @@
             ></a>
           </div>
         </div>
-      </section>
+      </section>     
+            
     </main>
-    <footer>
+    
+     
+        <footer>    
       <p>&copy; 2023 derechos RondonCarla</p>
     </footer>
+    <bottom id="modo-oscuro">Cambiar Modo</bottom> 
+    <script src="js\main.js"></script>
+    
   </body>
+
 </html>
