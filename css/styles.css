@@ -18,7 +18,7 @@ body {
 
 .dark-mode {
   background-color: rgb(46, 44, 44);
-  color: antiquewhite;
+  color: rgb(66, 65, 62);
 }
 /*Estilos del header*/
 header {
@@ -234,10 +234,7 @@ footer {
   .imagen-1{
     margin-top: 20px;
   }
-
-
 }
-
 
 @media screen and (min-width: 760px) {
   /*tablet*/
