@@ -13,6 +13,7 @@ body {
   line-height: 1.2;
   color: black;
   background-color: rgba(219, 203, 219, 0.918);
+  width: 100%;
 }
 
 .dark-mode {
@@ -79,44 +80,72 @@ header a:hover {
 /*Estilos del main*/
 main {
   background-color: #942b7f;
-  max-width: 759px;
+  max-width: 100%;
   padding: 80px 40px;
   margin-top: 95px;
   margin: auto;
+  box-sizing: border-box;
 }
+
 
 section {
   margin-bottom: 20px;
   min-height: 75vh;
+  max-width: 100%;
 }
+
+#inicio{
+  background-color: rgba(172, 225, 235, 0.918);
+  margin: 50px 30px;
+  padding: 15px;  
+
+}
+ 
+.inicio p{
+  align-items: center;
+  text-align: justify;
+  margin-right: 20px; 
+
+}
+
+.texto {
+  margin-top: 30px;  
+  display: flex;
+  justify-content: right;
+  align-items: center;   
+
+}
+
 .imagen-1 {
   max-width: 100%;
   width: 250px;
   height: 250px;
   border-radius: 200%;
-  margin: 20px;
-  border: 10px solid rgba(142, 19, 158, 0.918);
+  margin-right: 10px;
+  border: 10px solid rgba(142, 19, 158, 0.918);  
 }
+
 .imagen-2.active {
   src: url("img/flor.jpeg");
 }
 
 section h1 {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-#inicio article {
-  background-color: rgba(172, 225, 235, 0.918);
+.texto article {
   box-sizing: border-box;
   padding: 20px;
-  margin: 50px 30px;
+  margin: 50px 30px ;
   text-align: justify;
+  position: relative;
 }
 
 #resumen {
   text-align: center;
-  margin: 0 auto;
+ margin-top: 150px ;
+  
 }
 
 #contacto article {
@@ -126,7 +155,7 @@ section h1 {
 }
 
 #contacto p {
-  text-align: r;
+  text-align: justify;
   margin: 20px;
 }
 
@@ -162,11 +191,13 @@ section h2 {
   max-width: 100%;
   margin: 0 auto;
 }
+
 .groups i {
   font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 1;
 }
+
 i:hover {
   transition: 1.3s;
   transform: scale(1.1);
@@ -196,6 +227,17 @@ footer {
   padding: 20px;
   justify-content: center;
 }
+@media screen and (max-width: 578px){
+  .texto{
+    display: block;
+  }
+  .imagen-1{
+    margin-top: 20px;
+  }
+
+
+}
+
 
 @media screen and (min-width: 760px) {
   /*tablet*/
@@ -247,6 +289,7 @@ footer {
   section h1 {
     font-size: 40px;
   }
+
   #resumen button {
     background-color: rgba(19, 150, 226, 0.918);
     color: black;
@@ -295,9 +338,11 @@ footer {
   header li {
     margin-right: 10px;
   }
+
   header h1 {
     font-size: 48px;
   }
+
   /*Estilos principales de la página*/
   main {
     padding: 55px;
@@ -316,6 +361,7 @@ footer {
   section h1 {
     font-size: 48px;
   }
+
   #resumen button {
     background-color: rgba(19, 150, 226, 0.918);
     color: black;
